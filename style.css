@@ -1,0 +1,502 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --accent: #e74c3c;
+    --light: #ecf0f1;
+    --dark: #1a252f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 80px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: var(--primary);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.section-title h2:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--light);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #555;
+    font-weight: 500;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+    color: #555;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+}
+
+.linkedin {
+    background-color: #0077b5;
+    color: white;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: white;
+}
+
+.email {
+    background-color: #d44638;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: var(--secondary);
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Personal Statement */
+#statement {
+    background-color: white;
+}
+
+.statement-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Technical Skills */
+#skills {
+    background-color: #f8f9fa;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.skill-category {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.skill-category h3 {
+    color: var(--primary);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.skill-list {
+    list-style: none;
+}
+
+.skill-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+}
+
+.skill-list li i {
+    width: 25px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Custom Icons for Software Proficiency */
+.fa-aspen {
+    color: #7CB342;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    content: "A+";
+}
+
+.fa-matlab {
+    color: #FF6F00;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    content: "M";
+}
+
+.fa-chart-line { 
+    color: #3498db;
+}
+
+.fa-cubes {
+    color: #9b59b6;
+}
+
+/* Operational Skills Icons */
+.fa-industry { 
+    color: #1abc9c;
+}
+
+.fa-clipboard-check { 
+    color: #27ae60;
+}
+
+.fa-people-group { 
+    color: #3498db;
+}
+
+.fa-chess-knight { 
+    color: #e67e22;
+}
+
+/* Career Highlights */
+.highlights-slider {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    padding: 0 20px;
+}
+
+.highlight-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.highlight-image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.highlight-content {
+    padding: 30px;
+}
+
+.highlight-content h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.highlight-content p {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.slider-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slider-dot.active {
+    background: var(--secondary);
+}
+
+/* Achievements */
+.achievements-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.achievement {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.achievement h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.achievement .date {
+    color: var(--secondary);
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.achievement p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* Leadership & Communication */
+.feats-slider {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Publications */
+.publications-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.publication {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.publication h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.publication p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.publication a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* Footer */
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        order: 2;
+    }
+    
+    .hero-image {
+        order: 1;
+        margin-bottom: 30px;
+    }
+    
+    .hero-image img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .contact-item {
+        justify-content: center;
+    }
+    
+    .action-buttons {
+        justify-content: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .hero-content p {
+        font-size: 18px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .section-title h2 {
+        font-size: 30px;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 30px;
+    }
+    
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .contact-item {
+        font-size: 15px;
+    }
+    
+    .section-title h2 {
+        font-size: 26px;
+    }
+}
